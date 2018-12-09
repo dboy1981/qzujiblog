@@ -2,22 +2,13 @@ extends ../layouts/default
 
 block content
 	.container: .jumbotron
-		img(src='/images/logo.svg', width='160')
+		img(src='http://www.qzuji.com/static/assets/images/logo_wd.png', width='160')
 		h1 Welcome
-		p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
-		p It includes the latest versions of
-			| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
+		p 在这里和大家分享 <a href='http://qzuji.com' target='_blank'>趣租机</a> 平台创办和运营过程中遇到的各种问题和解决方案，还有对机器人租赁服务的一些想法.
+		p 欢迎志同道合的朋友来这里分享自己关于机器人的任何经验和想法。
+		p 申请投稿可发送Email <a href='mailto:service@qzuji.com'>service@qzuji.com</a> 或者QQ：44282588.
 		hr
 		if user && user.canAccessKeystone
 			p
 				a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
-		else
-			p We have created a default Admin user for you with the email <strong>44282588@qq.com</strong> and the password <strong>admin</strong>.
-			p
-				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-				|  to use the Admin UI.
-		hr
-		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+		
